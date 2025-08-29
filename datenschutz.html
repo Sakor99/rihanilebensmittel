@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Datenschutzerklärung – Rihani Lebensmittel</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="is-preload">
+
+    <!-- Header -->
+    <header id="header">
+      <div class="inner">
+        <div class="branding">
+          <a href="index.html" class="image avatar">
+            <img src="images/avatar.png" alt="Logo" />
+          </a>
+          <h1><strong>Rihani Lebensmittel</strong></h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+      <section id="datenschutz">
+        <h2>Datenschutzerklärung</h2>
+
+        <p>
+          Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TMG).
+        </p>
+
+        <h3>Verantwortliche Stelle</h3>
+        <p>
+          Rihani Lebensmittel<br>
+          Dyckerhoffstraße 26<br>
+          31535 Neustadt am Rübenberge<br>
+          Deutschland<br>
+          Telefon: +49 1578 661 33 55<br>
+          E-Mail: rihaniarif@gmail.com
+        </p>
+
+        <h3>Erhebung und Speicherung personenbezogener Daten</h3>
+        <p>
+          Beim Besuch unserer Website werden von uns keine personenbezogenen Daten automatisiert gespeichert. 
+          Sie können uns jedoch per E-Mail kontaktieren; in diesem Fall werden die von Ihnen übermittelten Daten (z. B. Name, E-Mail-Adresse, Inhalt Ihrer Nachricht) ausschließlich zur Bearbeitung Ihrer Anfrage verwendet und nicht an Dritte weitergegeben.
+        </p>
+
+        <h3>Hosting</h3>
+        <p>
+          Unsere Website wird über <strong>GitHub Pages</strong> bereitgestellt, ein Dienst der GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. 
+          Beim Aufruf unserer Seiten werden technische Daten (z. B. IP-Adresse, Zeitpunkt des Zugriffs) durch GitHub verarbeitet. 
+          Weitere Informationen finden Sie in der <a href="https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement" target="_blank">Datenschutzerklärung von GitHub</a>.
+        </p>
+
+        <h3>Ihre Rechte</h3>
+        <p>
+          Sie haben jederzeit das Recht auf Auskunft über die bei uns gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger sowie den Zweck der Datenverarbeitung. 
+          Außerdem haben Sie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. 
+          Bitte wenden Sie sich dazu an die oben angegebenen Kontaktdaten.
+        </p>
+
+        <h3>Änderungen dieser Datenschutzerklärung</h3>
+        <p>
+          Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht.
+        </p>
+      </section>
+    </div>
+
+<footer id="footer"></footer>
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

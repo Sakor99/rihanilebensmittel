@@ -78,10 +78,28 @@
 									</li>
 									<li>
 										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="#">rihaniarif@gmailcom</a>
+										<a href="#">rihaniarif@gmail.com</a>
+									</li>
+									<li>
+  										<h3 class="icon solid fa-info-circle"><span class="label">Über uns</span></h3>
+  										<a href="about.html">Über uns</a>
 									</li>
 								</ul>
 							</div>
+							
+							
+
+
+							<footer id="footer"></footer>
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
+
 						</div>
 					</section>
 

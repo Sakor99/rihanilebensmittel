@@ -3247,3 +3247,41 @@ input, select, textarea {
   border-radius: 0 !important; /* optional: remove forced circle mask */
   max-width: 220px;        /* adjust logo size */
 }
+	
+	/* Hard override for logo + text block */
+#header .branding {
+  display: flex !important;
+  flex-direction: column !important;  /* stack logo above text */
+  align-items: center !important;     /* center horizontally */
+  justify-content: center !important; /* center vertically inside .inner */
+  text-align: center !important;
+  gap: 0.5em !important;
+  height: 100%;
+  width: 100%;
+}
+
+#header .branding h1 {
+  margin: 0 !important;
+  font-size: 1.5em !important;
+  color: #fff !important;
+}
+/* Fix avatar centering */
+.image.avatar {
+  display: flex !important;
+  justify-content: center !important;  /* center horizontally */
+  align-items: center !important;      /* center vertically */
+  width: 100% !important;
+}
+
+.image.avatar img {
+  display: block;
+  margin: 0 auto;          /* force true centering */
+  border-radius: 0 !important; /* optional: remove forced circle mask */
+  max-width: 220px;        /* adjust logo size */
+}
+
+#footer ul.copyright li,
+#footer ul.copyright li a {
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
