@@ -196,15 +196,7 @@
     "price": " €",
     "category": "بقوليات"
   }  
-   ,
-    {
-    "id": 34,
-    "title": " عدس أحمر",
-    "description": "900g",
-    "image": "images/thumbs/27.jpg",
-    "price": " €",
-    "category": "بقوليات"
-  }  
+ 
   ,
     {
     "id": 23,
@@ -304,6 +296,14 @@
     "price": " €",
     "category": "بقوليات"
   }  
- 
+    ,
+    {
+    "id": 34,
+    "title": " عدس أحمر",
+    "description": "900g",
+    "image": "images/thumbs/27.jpg",
+    "price": " €",
+    "category": "بقوليات"
+  } 
 
 ]
