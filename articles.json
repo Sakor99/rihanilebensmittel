@@ -58,7 +58,7 @@
     {
     "id": 8,
     "title": "لبنة كرات بالزيت والفلفل",
-    "description": "950g",
+    "description": "950 g",
     "image": "images/thumbs/11.jpg",
     "price": " €",
     "category": "جبنة"
@@ -67,7 +67,7 @@
     {
     "id": 9,
     "title": "لبنة كرات بالزيت",
-    "description": "950g",
+    "description": "950 g",
     "image": "images/thumbs/12.jpg",
     "price": " €",
     "category": "جبنة"
@@ -76,7 +76,7 @@
     {
     "id": 10,
     "title": "لبنة بلدية",
-    "description": "900g",
+    "description": "900 g",
     "image": "images/thumbs/13.jpg",
     "price": " €",
     "category": "جبنة"
@@ -317,7 +317,7 @@
   ,
     {
     "id": 37,
-    "title": " برغل ناعم",
+    "title": " برغل ",
     "description": "5kg",
     "image": "images/thumbs/40.jpg",
     "price": " €",
@@ -327,7 +327,7 @@
   {
     "id": 38,
     "title": "زنجبيل",
-    "description": "1000g",
+    "description": "1kg",
     "image": "images/thumbs/41.jpg",
     "price": " €",
     "category": "بهارات"
@@ -335,7 +335,7 @@
  ,
   {
     "id": 39,
-    "title": "اورغانو",
+    "title": "أورغانو",
     "description": "900g",
     "image": "images/thumbs/42.jpg",
     "price": " €",
@@ -345,7 +345,7 @@
   {
     "id": 40,
     "title": "بهارات مشكلة",
-    "description": "1000kg",
+    "description": "1kg",
     "image": "images/thumbs/43.jpg",
     "price": " €",
     "category": "بهارات"
@@ -353,8 +353,8 @@
    ,
   {
     "id": 41,
-    "title": "بهارات",
-    "description": "900g",
+    "title": " خولنجان ناعم ",
+    "description": "1kg",
     "image": "images/thumbs/44.jpg",
     "price": " €",
     "category": "بهارات"
@@ -362,8 +362,8 @@
   ,
   {
     "id": 42,
-    "title":"فاصولياء",
-    "description": "900g",
+    "title":" فاصولياء",
+    "description": "1kg",
     "image": "images/thumbs/45.jpg",
     "price": " €",
     "category": "بقوليات"
@@ -372,7 +372,7 @@
   {
     "id": 43,
     "title": "مخلل خيار",
-    "description": "1000g",
+    "description": "1kg",
     "image": "images/thumbs/46.jpg",
     "price": " €",
     "category": "مخللات"
@@ -380,7 +380,7 @@
   ,
   {
     "id": 46,
-    "title": "بهارات",
+    "title": " بهارات شاورما",
     "description": "900g",
     "image": "images/thumbs/47.jpg",
     "price": " €",
@@ -408,7 +408,7 @@
   {
     "id": 47,
     "title": "باذنجان مشوي",
-    "description": "900g؟",
+    "description": "2,8kg",
     "image": "images/thumbs/50.jpg",
     "price": " €",
     "category": "مواد غذائية"
@@ -453,7 +453,7 @@
   {
     "id": 52,
     "title": "سمسم محمص",
-    "description": "400ل",
+    "description": "400g",
     "image": "images/thumbs/55.jpg",
     "price": " €",
     "category": "بهارات"
@@ -461,7 +461,7 @@
   ,
   {
     "id": 53,
-    "title": " مجففة نعناع",
+    "title": "نعناع مجففة ",
     "description": "150g",
     "image": "images/thumbs/56.jpg",
     "price": " €",
@@ -470,7 +470,7 @@
   ,
   {
     "id": 54,
-    "title": "فلفل اسود مطحون",
+    "title": "فلفل أسود مطحون",
     "description": "150g",
     "image": "images/thumbs/57.jpg",
     "price": " €",
@@ -479,7 +479,7 @@
   ,
   {
     "id": 55,
-    "title": "سمسم ابيض",
+    "title": "سمسم أبيض",
     "description": "400g",
     "image": "images/thumbs/58.jpg",
     "price": " €",
@@ -498,7 +498,7 @@
   {
     "id": 57,
     "title": "مكدوس",
-    "description": "2600g",
+    "description": "2,6kg",
     "image": "images/thumbs/60.jpg",
     "price": " €",
     "category": "مواد غذائية"
@@ -515,7 +515,7 @@
   ,
   {
     "id": 59,
-    "title": "مخلل فلفلة يوناني",
+    "title": "مخلل فلفل يوناني",
     "description": "9kg",
     "image": "images/thumbs/62.jpg",
     "price": " €",
@@ -525,7 +525,7 @@
   {
     "id": 60,
     "title": "مخلل لفت شرائح",
-    "description": "2800g",
+    "description": "2,8kg",
     "image": "images/thumbs/63.jpg",
     "price": " €",
     "category": "مخللات"
@@ -533,11 +533,11 @@
   ,
   {
     "id": 62,
-    "title": "زيتون اخضر سلقيني",
-    "description": "3000g",
+    "title": "زيتون أخضر سلقيني",
+    "description": "3kg",
     "image": "images/thumbs/64.jpg",
     "price": " €",
-    "category": "زيت و زيتون"
+    "category": "زيت"
   }
   ,
   {
@@ -552,7 +552,7 @@
   {
     "id": 64,
     "title": "مخلل خيار",
-    "description": "660",
+    "description": "660g",
     "image": "images/thumbs/66.jpg",
     "price": " €",
     "category": "مخللات"
@@ -560,7 +560,7 @@
   ,
   {
     "id": 65,
-    "title": "مخلل فلفة",
+    "title": "مخلل فلفل",
     "description": "660g",
     "image": "images/thumbs/67.jpg",
     "price": " €",
@@ -579,10 +579,10 @@
   {
     "id": 68,
     "title": "عطون بلدي",
-    "description": "1000g",
+    "description": "1kg",
     "image": "images/thumbs/69.jpg",
     "price": " €",
-    "category": "زيت و زيتون"
+    "category": "زيت"
   }
   ,
   {
@@ -597,7 +597,7 @@
   {
     "id": 70,
     "title": "مخلل فليفلة هلابينو",
-    "description": "9000g",
+    "description": "9kg",
     "image": "images/thumbs/71.jpg",
     "price": " €",
     "category": "مخللات"
