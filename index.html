@@ -1,4 +1,9 @@
 <!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
 		<title>Rihani Lebensmittel</title>
@@ -9,143 +14,94 @@
 	<body class="is-preload">
 
 		<!-- Header -->
-		<header id="header">
-			<div class="inner">
-				<div class="branding">
-					<a href="#" class="image avatar">
-						<img src="images/avatar.png" alt="Logo" />
-					</a>
-					<h1><strong>Rihani Lebensmittel</strong></h1>
-				</div>
-			</div>
-		</header>
+			<header id="header">
+  				<div class="inner">
+    				<div class="branding">
+      					<a href="#" class="image avatar">
+        				<img src="images/avatar.png" alt="Logo" />
+      					</a>
+      				<h1><strong>Rihani Lebensmittel</strong></h1>
+    					</div>
+  					</div>
+				</header>
 
 		<!-- Main -->
-		<div id="main">
+			<div id="main">
 
-			<!-- One -->
-			<section id="one" style="text-align: center;">
-				<header class="major">
-					<h2><span dir="rtl" lang="ar">ريحاني للمواد الغذائية</span></h2>
-					<h3>Syrisches Lebensmittel in Deutschland</h3>
-				</header>
-			</section>
+				<!-- One -->
+					<section id="one"style="text-align: center;">
+						<header class="major">
+							<h2>
+							<h2><span dir="rtl" lang="ar">ريحاني للمواد الغذائية</span></h2>
+							<h3>Syrisches Lebensmittel in Deutschland</h3>
+							</h2>
+						</header>
+						
+					</section>
 
-			<!-- Two -->
-			<section id="two">
-				<h2>Unsere Produkte</h2>
-				<div id="filters">
-					<button data-filter="all" class="button small">الكل</button>
-					<button data-filter="زيت" class="button small">زيت و زيتون</button>
-					<button data-filter="جبنة" class="button small">جبنة</button>
-					<button data-filter="بهارات" class="button small">بهارات</button>
-					<button data-filter="بقوليات" class="button small">بقوليات</button>
-					<button data-filter="مخللات" class="button small">مخللات</button>
-					<button data-filter="مواد غذائية" class="button small">مواد غذائية</button>
-				</div>
-				<br>
+				<!-- Two -->
+					<section id="two">
+  						<h2>Unsere Produkte</h2>
+						<div id="filters">
+							<button data-filter="all" class="button small">الكل</button>
+  							<button data-filter="زيت" class="button small">زيت و زيتون</button>
+  							<button data-filter="جبنة" class="button small">جبنة</button>
+  							<button data-filter="بهارات" class="button small">بهارات</button>
+  							<button data-filter="بقوليات" class="button small">بقوليات</button>
+							<button data-filter="مخللات" class="button small">مخللات</button>
+							<button data-filter="مواد غذائية" class="button small">مواد غذائية</button>
+						</div>
+					</br>
 
-				<!-- زر عرض السلة وتحميل PDF -->
-				<button id="show-cart" class="button">🛒 Warenkorb / PDF</button>
+  						<div class="row" id="articles-container">
+   					 <!-- Items will be injected here from articles.json -->
+  						</div>
+					</section>
 
-				<div class="row" id="articles-container">
-					<!-- مثال منتجات ثابتة -->
-					<div class="col-4 col-12-medium">
-						<h3>Olivenöl</h3>
-						<p>5.99€</p>
-						<button onclick="addToCart('Olivenöl', '5.99€')">In den Warenkorb</button>
-					</div>
 
-					<div class="col-4 col-12-medium">
-						<h3>Haloumi Käse</h3>
-						<p>7.50€</p>
-						<button onclick="addToCart('Haloumi Käse', '7.50€')">In den Warenkorb</button>
-					</div>
+				<!-- Three -->
+					<section id="three">
+						<h2>Kontakt</h2>
+						<div class="row">
 
-					<div class="col-4 col-12-medium">
-						<h3>Gewürze Mix</h3>
-						<p>3.20€</p>
-						<button onclick="addToCart('Gewürze Mix', '3.20€')">In den Warenkorb</button>
-					</div>
-				</div>
-			</section>
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li style="font-size:18px;">
+										<h3 class="icon solid fa-home" ><span class="label">Address</span></h3>
+										Dyckerhoffstraße 26,<br />
+										31535 Neustadt am Rübenberge <br />
+										Deutschland
+									</li>
+									<li>
+										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+										<a>+49 1578 661 33 55</a>
+									</li>
+									<li>
+										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+										<a href="#">rihaniarif@gmail.com</a>
+									</li>
+									<li>
+  										<h3 class="icon solid fa-info-circle"><span class="label">Über uns</span></h3>
+  										<a href="about.html">Über uns</a>
+									</li>
+								</ul>
+							</div>
+							
+							
 
-			<!-- Three -->
-			<section id="three">
-				<h2>Kontakt</h2>
-				<div class="row">
-					<div class="col-4 col-12-small">
-						<ul class="labeled-icons">
-							<li style="font-size:18px;">
-								<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-								Dyckerhoffstraße 26,<br />
-								31535 Neustadt am Rübenberge <br />
-								Deutschland
-							</li>
-							<li>
-								<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-								<a>+49 1578 661 33 55</a>
-							</li>
-							<li>
-								<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-								<a href="#">rihaniarif@gmail.com</a>
-							</li>
-							<li>
-								<h3 class="icon solid fa-info-circle"><span class="label">Über uns</span></h3>
-								<a href="about.html">Über uns</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
 
-		</div>
+							<footer id="footer"></footer>
+<script>
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
 
-		<footer id="footer"></footer>
-		<script>
-		  fetch("footer.html")
-			.then(response => response.text())
-			.then(data => {
-			  document.getElementById("footer").innerHTML = data;
-			});
-		</script>
 
-		<!-- jsPDF und Warenkorb Script -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-		<script>
-			let warenkorb = [];
-
-			// Funktion: Artikel hinzufügen
-			function addToCart(itemName, price) {
-				warenkorb.push({ name: itemName, price: price });
-				alert(itemName + " wurde zum Warenkorb hinzugefügt!");
-			}
-
-			// PDF erstellen
-			document.getElementById("show-cart").addEventListener("click", () => {
-				if (warenkorb.length === 0) {
-					alert("Warenkorb ist leer!");
-					return;
-				}
-
-				const { jsPDF } = window.jspdf;
-				const doc = new jsPDF();
-
-				doc.setFontSize(18);
-				doc.text("Warenkorb - Rihani Lebensmittel", 10, 20);
-
-				let y = 40;
-				warenkorb.forEach((item, index) => {
-					doc.text(`${index + 1}. ${item.name} - ${item.price}`, 10, y);
-					y += 10;
-				});
-
-				doc.save("warenkorb.pdf");
-			});
-		</script>
-	</body>
-</html>
-
+						</div>
+					</section>
 
 				<!-- Four -->
 				<!--
