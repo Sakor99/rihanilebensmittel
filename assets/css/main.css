@@ -2588,18 +2588,18 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/bg.jpg");
-		background-position: top left,							top left;
-		background-repeat: repeat,								no-repeat;
-		background-size: auto,								150%;
+		background-image: url("../../images/bg.png");
+		background-position: center top,							top left;
+		background-repeat: no-repeat,								no-repeat;
+		background-size: contain,								150%;
 		color: rgba(255, 255, 255, 0.5);
-		height: 100%;
+		height: 1730px;
 		left: 0;
-		padding: 8em 4em;
-		position: fixed;
-		text-align: left;
+		padding: 2em 1em;
+		position: relative;
+		text-align: center;
 		top: 0;
-		width: 35%;
+		width: 100%;
 	}
 
 		#header > * {
@@ -2679,11 +2679,12 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		margin-left: 35%;
-		max-width: 54em;
-		padding: 8em 4em 4em 4em;
-		width: calc(100% - 35%);
-	}
+    margin: 0 auto;       /* center content */
+    width: 90%;           /* use most of the page width */
+    max-width: 1200px;    /* keep nice limit for big screens */
+    padding-top: 20px;    /* space below header */
+}
+
 
 		#main > section {
 			border-top: solid 2px #efefef;
@@ -3075,7 +3076,7 @@ input, select, textarea {
 			#footer {
 				background-attachment: scroll;
 				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+				background-image: url("images/overlay.png"), url("../../images/bg.png");
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
@@ -3279,6 +3280,21 @@ input, select, textarea {
   border-radius: 0 !important; /* optional: remove forced circle mask */
   max-width: 220px;        /* adjust logo size */
 }
+.product-checkbox {
+  display: inline-block !important;
+  appearance: auto !important;
+  -webkit-appearance: checkbox !important; /* Safari/Chrome */
+  -moz-appearance: checkbox !important;    /* Firefox */
+  width: 18px !important;
+  height: 18px !important;
+  margin-right: 6px;
+  cursor: pointer;
+  position: relative !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+
 
 #footer ul.copyright li,
 #footer ul.copyright li a {
