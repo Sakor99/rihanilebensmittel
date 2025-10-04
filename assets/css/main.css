@@ -2567,40 +2567,16 @@ input, select, textarea {
 			margin: 0;
 		}
 
-/* Header */
 
-	#header {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-direction: column;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-moz-align-items: -moz-flex-end;
-		-webkit-align-items: -webkit-flex-end;
-		-ms-align-items: -ms-flex-end;
-		align-items: flex-end;
-		-moz-justify-content: space-between;
-		-webkit-justify-content: space-between;
-		-ms-justify-content: space-between;
-		justify-content: space-between;
-		background-color: #1f1815;
-		background-attachment: scroll,								scroll;
-		background-image: url("../../images/bg.png");
-		background-position: center top,							top left;
-		background-repeat: no-repeat,								no-repeat;
-		background-size: contain,								150%;
-		color: rgba(255, 255, 255, 0.5);
-		height: 1730px;
-		left: 0;
-		padding: 2em 1em;
-		position: relative;
-		text-align: center;
-		top: 0;
-		width: 100%;
-	}
+
+
+/* Header */
+#header {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  overflow: hidden; /* hide anything outside */
+}
 
 		#header > * {
 			-moz-flex-shrink: 0;
@@ -2609,14 +2585,21 @@ input, select, textarea {
 			flex-shrink: 0;
 			width: 100%;
 		}
-
-		#header > .inner {
-			-moz-flex-grow: 1;
-			-webkit-flex-grow: 1;
-			-ms-flex-grow: 1;
-			flex-grow: 1;
-			margin: 0 0 2em 0;
-		}
+/* Background image should show completely */
+#header .header-bg {
+  width: 100%;
+  height: auto;       /* keep proportions */
+  display: block;
+}
+/* Logo + text in center of the image */
+#header .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
 
 		#header strong, #header b {
 			color: #ffffff;
@@ -2626,20 +2609,18 @@ input, select, textarea {
 			color: #ffffff;
 		}
 
-		#header h1 {
-			color: #fff;
-			font-size: 2.35em;
-			line-height: 1.75em;
-			margin: 0;
-  			text-shadow: 4px 4px 10px rgba(0,0,0,0.9);
-		}
+#header h1 {
+  margin-top: 0.5em;
+  font-size: 2em;
+  color: #fff;
+}
 
-		#header .image.avatar {
-			margin: 0 0 1em 0;
-			width: 6.25em;
-
-		}
-
+	
+#header .image.avatar img {
+  border-radius: 50%;
+  width: 120px;
+  height: auto;
+}
 /* Footer */
 
 	#footer .icons {
@@ -2682,7 +2663,7 @@ input, select, textarea {
     margin: 0 auto;       /* center content */
     width: 90%;           /* use most of the page width */
     max-width: 1200px;    /* keep nice limit for big screens */
-    padding-top: 20px;    /* space below header */
+    padding: 2em 1em;    /* space below header */
 }
 
 
@@ -3219,21 +3200,22 @@ input, select, textarea {
 	}
 	/* Hard override for logo + text block */
 #header .branding {
-  display: flex !important;
-  flex-direction: column !important;  /* stack logo above text */
-  align-items: center !important;     /* center horizontally */
-  justify-content: center !important; /* center vertically inside .inner */
-  text-align: center !important;
-  gap: 0.5em !important;
-  height: 100%;
-  width: 100%;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5em;
 }
 
 #header .branding h1 {
-  margin: 0 !important;
-  font-size: 1.5em !important;
-  color: #fff !important;
+  margin: 0;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* better readability */
 }
+
 /* Fix avatar centering */
 .image.avatar {
   display: flex !important;
