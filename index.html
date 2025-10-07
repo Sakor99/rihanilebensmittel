@@ -444,23 +444,26 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				</div>
 			</footer>
 -->
-		<!-- Scripts -->
+<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/arabic-persian-reshaper/dist/reshaper.min.js"></script>
 			<script src="assets/js/articles.js"></script>
 
 
 <footer id="footer"></footer>
-<script>
-  fetch("footer.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("footer").innerHTML = data;
-    });
-</script>
+						<script>
+  						fetch("footer.html")
+    					.then(response => response.text())
+    					.then(data => {
+      					document.getElementById("footer").innerHTML = data;
+    					});
+						</script>
 	</body>
+	
 </html>
