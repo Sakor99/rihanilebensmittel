@@ -6,6 +6,8 @@
 -->
 <html>
 	<head>
+		<link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+
 		<link rel="icon" type="image/png" href="images/avatar.png" />
 		<title>Rihani Lebensmittel</title>
 		<meta charset="utf-8" />
@@ -16,16 +18,21 @@
 
 		<!-- Header -->
 	<header id="header">
-  		<img src="images/bg.png" alt="Background" class="header-bg">
-  			<div class="inner">
-    			<div class="branding">
-      				<a href="#" class="image avatar">
-        				<img src="images/avatar.png" alt="Logo" />
-      				</a>
-      				<h1><strong>Rihani Lebensmittel</strong></h1>
-    			</div>
-  			</div>
-	</header>
+	
+  <img src="images/bg.png" alt="Background" class="header-bg">
+  <div class="inner">
+    <div class="branding">
+      <a href="#" class="image avatar">
+        <img src="images/avatar.png" alt="Logo" />
+      </a>
+      <h1><strong>Rihani Lebensmittel</strong></h1>
+    </div>
+  </div>
+</header>
+
+
+
+
 
 		<!-- Main -->
 			<div id="main">
@@ -58,6 +65,16 @@
   						<div class="row" id="articles-container">
    					 <!-- Items will be injected here from articles.json -->
   						</div>
+					  <ul class="actions">
+						    <li><input
+  									type="text"
+  									id="customer-name"
+  									placeholder="Kundennamen eingeben"
+  									style="margin-bottom:10px;width:100%;max-width:300px;padding:8px;border:1px solid #ccc;border-radius:4px;"
+										>
+								<br>
+								<button id="generate-pdf" class="button primary">Bestellung ausdrucken</button></li>
+  						</ul>
 					</section>
 
 
@@ -88,8 +105,6 @@
 									</li>
 								</ul>
 							</div>
-						
-
 						</div>
 					</section>
 
