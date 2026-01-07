@@ -3276,6 +3276,33 @@ input, select, textarea {
   visibility: visible !important;
 }
 
+/* Soft red button – default state */
+button.add-to-order {
+  background-color: #e06b6b;   /* soft warm red */
+  color: #000 !important;                 /* 👈 black text for clarity */
+  border: none;
+  transition: background-color 0.2s ease, transform 0.1s ease, color 0.2s ease;
+}
+
+/* Hover */
+button.add-to-order:hover {
+  background-color: #d45a5a;
+  color: #fff !important;                 /* 👈 white text on hover */
+  transform: translateY(-1px);
+}
+
+/* Active / clicked */
+button.add-to-order:active {
+  background-color: #c94f4f;
+  transform: translateY(0);
+}
+
+/* Selected state */
+button.add-to-order.selected {
+  background-color: #6fbf73;
+  color: #fff;
+}
+
 
 
 #footer ul.copyright li,
