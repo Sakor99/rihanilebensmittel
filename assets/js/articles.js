@@ -21,33 +21,33 @@ function renderArticles(filterCategory = "all") {
         : "images/thumbs/no-image.jpg";
 
     const saved = selectedItems[article.id];
-    const isChecked = saved !== undefined;
+    const isSelected = saved !== undefined;
     const quantity = saved ? saved.quantity : 1;
 
     articleEl.innerHTML = `
-      <label style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
-        
-        <input type="checkbox" class="product-checkbox"
-          style="all:unset;appearance:auto;-webkit-appearance:checkbox;-moz-appearance:checkbox;
-                 display:inline-block;width:16px;height:16px;cursor:pointer;margin:0;"
-          ${isChecked ? "checked" : ""}
-          data-id="${article.id}" 
+      <div class="select-row" style="display:flex;align-items:center;gap:8px;margin-bottom:6px;">
+        <button type="button" class="add-to-order button small"
+          data-id="${article.id}"
           data-title="${article.title}"
           data-description="${article.description}">
-        <div class="quantity-container" style="display:${isChecked ? "flex" : "none"};
-             align-items:center;gap:5px;">
-          <button class="dec">-</button>
+          ${isSelected ? "In Bestellung" : "Zur Bestellung hinzufügen"}
+        </button>
+
+        <div class="quantity-container" style="display:${isSelected ? "flex" : "none"};align-items:center;gap:5px;">
+          <button type="button" class="dec">-</button>
           <input type="number" class="quantity-input" value="${quantity}" min="1"
-                 style="width:45px;text-align:center;">
-          <button class="inc">+</button>
+                style="width:45px;text-align:center;">
+          <button type="button" class="inc">+</button>
         </div>
-      </label>
+      </div>
+
       <a href="${imgSrc}" class="image fit thumb">
         <img src="${imgSrc}" alt="${article.title}" />
       </a>
       <h3>${article.title}</h3>
       <p>${article.description}</p>
     `;
+
 
     container.appendChild(articleEl);
   });
@@ -74,46 +74,62 @@ function renderArabicToImage(text, fontSize = 24, fontFamily = "Rubik") {
 
 // ✅ Attach handlers for checkboxes and counters
 function attachEventHandlers() {
-  document.querySelectorAll(".product-checkbox").forEach((cb) => {
-    cb.addEventListener("change", () => {
-      const id = cb.dataset.id;
-      const title = cb.dataset.title;
-      const description = cb.dataset.description;
-      const container = cb
-        .closest("label")
-        .querySelector(".quantity-container");
+  // Add/remove item via button
+  document.querySelectorAll(".add-to-order").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const id = btn.dataset.id;
+      const title = btn.dataset.title;
+      const description = btn.dataset.description;
 
-      if (cb.checked) {
-        container.style.display = "flex";
-        selectedItems[id] = { id, title, description, quantity: 1 };
+      const qtyContainer = btn.parentElement.querySelector(".quantity-container");
+      const qtyInput = qtyContainer.querySelector(".quantity-input");
+
+      const isSelected = selectedItems[id] !== undefined;
+
+      if (!isSelected) {
+        // add
+        qtyContainer.style.display = "flex";
+        selectedItems[id] = { id, title, description, quantity: parseInt(qtyInput.value) || 1 };
+        btn.textContent = "In Bestellung";
       } else {
-        container.style.display = "none";
+        // remove
+        qtyContainer.style.display = "none";
         delete selectedItems[id];
+        btn.textContent = "Zur Bestellung hinzufügen";
       }
     });
   });
 
+  // Counter buttons (same logic as before)
   document.querySelectorAll(".quantity-container").forEach((div) => {
     const input = div.querySelector(".quantity-input");
     const inc = div.querySelector(".inc");
     const dec = div.querySelector(".dec");
-    const id = div
-      .closest("label")
-      .querySelector(".product-checkbox").dataset.id;
+
+    const btn = div.parentElement.querySelector(".add-to-order");
+    const id = btn.dataset.id;
 
     inc.addEventListener("click", () => {
       input.value = parseInt(input.value) + 1;
       if (selectedItems[id]) selectedItems[id].quantity = parseInt(input.value);
     });
+
     dec.addEventListener("click", () => {
       if (parseInt(input.value) > 1) {
         input.value = parseInt(input.value) - 1;
-        if (selectedItems[id])
-          selectedItems[id].quantity = parseInt(input.value);
+        if (selectedItems[id]) selectedItems[id].quantity = parseInt(input.value);
       }
+    });
+
+    // If user edits number manually
+    input.addEventListener("input", () => {
+      const v = Math.max(1, parseInt(input.value) || 1);
+      input.value = v;
+      if (selectedItems[id]) selectedItems[id].quantity = v;
     });
   });
 }
+
 
 // ✅ Load products and render
 fetch("articles.json")
